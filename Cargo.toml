@@ -1,0 +1,19 @@
+[package]
+name = "ab_versions_py"
+version = "0.8.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "ab_versions"
+crate-type = ["cdylib"]
+
+
+[dependencies]
+ab_versions = {path = "../ab_versions_rs"} 
+
+[dependencies.pyo3]
+version = "0.19"
+# "abi3-py37" tells pyo3 (and maturin) to build using the stable ABI with minimum Python version 3.7
+features = ["abi3-py37"]
