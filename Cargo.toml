@@ -11,7 +11,7 @@ crate-type = ["cdylib"]
 
 
 [dependencies]
-ab_versions = {path = "../ab_versions_rs"} 
+ab_versions = {git = "https://github.com/Vadoola/ab_versions_rs.git"} 
 
 [dependencies.pyo3]
 version = "0.19"
